@@ -1,0 +1,12 @@
+Package: docxR
+Title: docx and R
+Version: 0.9
+Authors@R: 
+    person("Jing","Zhang",role = c("aut", "cre"),email = "zj391120@163.com")
+Description: docx and R.
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+Imports: 
+    flextable,
+    officer
