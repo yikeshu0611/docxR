@@ -4,7 +4,14 @@
 \alias{docx_add_image}
 \title{add image}
 \usage{
-docx_add_image(image, height = 5, width = 5, style = "centered")
+docx_add_image(
+  image,
+  height = 5,
+  width = 5,
+  style = "centered",
+  title = NULL,
+  foot = NULL
+)
 }
 \arguments{
 \item{image}{image name or ggplot2 object}
@@ -14,6 +21,10 @@ docx_add_image(image, height = 5, width = 5, style = "centered")
 \item{width}{width, 5 is default}
 
 \item{style}{centered}
+
+\item{title}{title for image}
+
+\item{foot}{foot for image}
 }
 \description{
 add image

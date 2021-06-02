@@ -3,10 +3,9 @@
 #'
 #' @export
 #'
-docx_page_break <- function(){
-    docx <- get('docx',envir = .GlobalEnv)
-    officer::body_add_break(docx, pos="after")
-    docx_print()
-    cat("\nadd page break")
+docx_next_page <- function(){
+    officer::read_docx(.docxname) |>
+        officer::body_add_break(pos="after") |>
+        print(.docxname)
 }
 

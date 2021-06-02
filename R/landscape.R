@@ -4,10 +4,9 @@
 #' @export
 #'
 docx_start_landscape <- function(){
-    docx <- get('docx',envir = .GlobalEnv)
-    docx <- officer::body_end_section_continuous(docx)
-    docx_print()
-    cat("\norientate to the start")
+    officer::read_docx(.docxname) |>
+        officer::body_end_section_continuous() |>
+        print(.docxname)
 }
 
 #' start the the end landscape
@@ -15,8 +14,7 @@ docx_start_landscape <- function(){
 #' @export
 #'
 docx_end_landscape=function(){
-    docx <- get('docx',envir = .GlobalEnv)
-    officer::body_end_section_landscape(docx)
-    docx_print()
-    cat("\norientate to the end")
+    officer::read_docx(.docxname) |>
+        officer::body_end_section_landscape() |>
+        print(.docxname)
 }

@@ -4,10 +4,14 @@
 \alias{docx_add_table}
 \title{add there line talbe}
 \usage{
-docx_add_table(tbl)
+docx_add_table(tbl, title = NULL, foot = NULL)
 }
 \arguments{
 \item{tbl}{one data.frame}
+
+\item{title}{title for talbe}
+
+\item{foot}{foot for table}
 }
 \description{
 add there line talbe

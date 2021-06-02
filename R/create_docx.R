@@ -16,9 +16,8 @@ create_docx <- function(docxname){
     if (tolower(do::right(docxname,5)) != '.docx'){
         docxname <- paste0(docxname,'.docx')
     }
-    docxname <<- docxname
-    docx <<- officer::read_docx()
-    docx_print()
+    .docxname <<- docxname
+    docx <- officer::read_docx()
+    print(docx, target=.docxname)
     cat('\ncreate docx: ',docxname,' to ',getwd())
-    cat('\ncreate global variable docx and docxname')
 }
